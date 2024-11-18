@@ -2,6 +2,9 @@
 
 This project detects and tracks people in videos using YOLOv8 for object detection and SORT (Simple Online and Realtime Tracking) for tracking the detected objects across video frames. It is a simple yet powerful solution for real-time video analysis.
 
+## Purpose
+The primary objective of this project is to serve as a foundational framework for exploring and analyzing the impact of various hyperparameter configurations on object detection and tracking performance. By providing a modular and adaptable implementation, this project enables researchers and enthusiasts to experiment with different settings, compare results, and gain deeper insights into how hyperparameters influence the accuracy, efficiency, and robustness of object detection and tracking systems.
+
 ## Features
 - **Person Detection**: Uses YOLOv8 to detect people in video frames.
 - **Object Tracking**: Implements the SORT algorithm to track the detected people across frames.
