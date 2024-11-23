@@ -16,14 +16,15 @@ while cap.isOpened():
     # Perform object detection using YOLOv8
     results = model(frame)
 
-    # Detect persons (person class has ID 0 in the COCO dataset)
-    # results.xywh[0] contains information about detected objects
-    # [0] = person class (use class 0 for detecting people)
-    for result in results.xywh[0]:  # Iterate through all detected objects
-        if result[5] == 0:  # When a person is detected (class 0 in COCO)
-            x1, y1, x2, y2 = map(int, result[:4])  # Bounding box coordinates
-            confidence = result[4]  # Confidence score
+    # Access detected boxes from results
+    # results.boxes contains the bounding box information
+    for result in results[0].boxes:  # Iterate through all detected boxes
+        x1, y1, x2, y2 = map(int, result.xyxy)  # Bounding box coordinates (x1, y1, x2, y2)
+        confidence = result.conf  # Confidence score
+        class_id = int(result.cls)  # Class ID
 
+        # Detect persons (person class has ID 0 in the COCO dataset)
+        if class_id == 0:  # When a person is detected (class 0 in COCO)
             # Draw bounding box
             cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)  # Blue bounding box
             cv2.putText(frame, f"Person: {confidence:.2f}", (x1, y1 - 10), 
