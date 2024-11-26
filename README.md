@@ -51,7 +51,7 @@ Feel free to fork the repository, open issues, and submit pull requests. Contrib
 | Algorithm | Description | Implementation Status |
 |-----------|-------------|-----------------------|
 | **YOLO (You Only Look Once)** | A high-speed, high-accuracy object detection model. Suitable for real-time detection. | ✅ |
-| **Faster R-CNN** | A high-accuracy object detection model. Suitable for complex objects. Since it detects objects in images, not videos, frames must be processed separately. |  |
+| **Faster R-CNN** | A high-accuracy object detection model. Suitable for complex objects. Since it detects objects in images, not videos, frames must be processed separately. | ✅ |
 | **SSD (Single Shot MultiBox Detector)** | A lightweight model suitable for real-time detection. | ❌ |
 | **EfficientDet** | A model with an excellent balance between accuracy and speed. |  |
 | **RetinaNet** | A model with strength in detecting small objects using Focal Loss. |  |
