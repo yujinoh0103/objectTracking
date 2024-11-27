@@ -4,7 +4,7 @@
 |----------|------|-----------|
 | **YOLO (You Only Look Once)** | 고속·고정밀 객체 탐지 모델. 실시간 탐지에 적합. | ✅ |
 | **Faster R-CNN** | 높은 정확도의 객체 탐지 모델. 복잡한 객체에 적합. 영상이 아닌 이미지에서 객체를 탐지하기 때문에 프레임별로 나누는 작업이 필요하다.| ✅ |
-| **SSD (Single Shot MultiBox Detector)** | 실시간 탐지에 적합한 경량 모델. | ❌ |
+| **SSD (Single Shot MultiBox Detector)** | 실시간 탐지에 적합한 경량 모델. | ✅ |
 | **EfficientDet** | 정확도와 속도 균형이 뛰어난 모델. |  |
 | **RetinaNet** | Focal Loss를 사용해 작은 객체 탐지에 강점. |  |
 
